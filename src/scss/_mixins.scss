@@ -1,0 +1,101 @@
+//
+// Mixins
+//
+// Ex:
+// @include transition;
+
+@mixin transition {
+  transition: all 0.4s ease;
+}
+@mixin transition-bezier {
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+//
+//  Fonts
+//
+@mixin font-head {
+  font-weight: 400;
+  font-family: $milky;
+}
+
+@mixin font-body {
+  font-weight: 400;
+  font-family: $body-font;
+}
+
+//  15/20px
+@mixin size-0 {
+  font-size: $size-0;
+  line-height: $space;
+}
+//  20/30px
+@mixin size-1 {
+  font-size: $size-1;
+  line-height: $space * 1.5;
+}
+//  26/40px
+@mixin size-2 {
+  font-size: $size-2;
+  line-height: $space * 2;
+}
+//  Below used for heddings
+//  Therefore smaller line-height
+//  36/40px
+@mixin size-3 {
+  font-size: $size-3;
+  line-height: $space * 2;
+}
+//  48/50px
+@mixin size-4 {
+  font-size: $size-4;
+  line-height: $space * 2.5;
+}
+//  64/70px
+@mixin size-5 {
+  font-size: $size-5;
+  line-height: $space * 3.5;
+}
+//  84/90px
+@mixin size-6 {
+  font-size: $size-6;
+  line-height: $space * 4.5;
+}
+
+//
+//  MEDIA
+//
+// usage
+//  .my-box {
+//    padding: 10px;
+//
+//    @include for-desktop-up {
+//      padding: 20px;
+//    }
+//  }
+//
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

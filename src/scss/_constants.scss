@@ -1,0 +1,66 @@
+//
+// Constants
+//
+
+//  Section width
+$section-width: 1040px;
+$real-section-width-rem: (1000rem / 20);
+
+//
+// Colors
+//
+$white: #fff;
+$gray-light: #aaa;
+$gray-on-dark: rgba(white, 0.7);
+$gray: #ccc;
+$dark-gray: #888;
+
+$font-dark: #171f26;
+$font-light: #616b73;
+$font-semi-dark: #171f26;
+
+//
+// Typography and spacing
+//
+@font-face {
+  font-family: 'MilkyLove';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Milky Love'), local('MilkyLove'),
+       url('../fonts/Milky_Love.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Milky_Love.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+$body-font: 'Iowan Old Style', 'Book Antiqua', 'Palatino Linotype', 'Palatino',
+  'URW Palladio L', 'Palatino LT STD', 'Droid Serif', 'Georgia', serif;
+$milky: 'Milky Love', 'MilkyLove', 'Gill Sans', 'Gill Sans MT',
+  'Nimbus Sans L', Roboto, sans-serif;
+
+// Scale 1.333 rounded
+$size-mini: 0.6rem;
+$size-0: 0.75rem;
+$size-1: 1rem;
+$size-2: 1.3rem;
+$size-3: 1.8rem;
+$size-4: 2.4rem;
+$size-5: 3.2rem;
+$size-6: 4.2rem;
+
+$line-0: 1.25;
+$line-1: 1.5;
+
+//
+// Spacing
+//
+$space: 1rem;
+
+$space-quarter: 0.25 * $space;
+$space-half: 0.5 * $space;
+
+$space-2: 2 * $space;
+$space-3: 3 * $space;
+$space-4: 4 * $space;
+$space-5: 5 * $space;
+$space-6: 6 * $space;
+$space-8: 8 * $space;
+
