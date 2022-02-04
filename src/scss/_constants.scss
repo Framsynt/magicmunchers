@@ -9,15 +9,23 @@ $real-section-width-rem: (1000rem / 20);
 //
 // Colors
 //
-$white: #fff;
+$white-primary: rgba(255,255,255,0.87);
+$white-secondary: rgba(255,255,255,0.60);
+$white-faded: rgba(255,255,255,0.38);
+$black-primary: rgba(0,0,0,0.87);
+$black-secondary: rgba(0,0,0,0.60);
+$black-faded: rgba(0,0,0,0.38);
 $gray-light: #aaa;
 $gray-on-dark: rgba(white, 0.7);
 $gray: #ccc;
 $dark-gray: #888;
 
-$font-dark: #171f26;
-$font-light: #616b73;
-$font-semi-dark: #171f26;
+
+$blue-light: #4E738F;
+$blue-primary: #204561;
+$blue-dark: #092134;
+
+$magic-green: #4BE2B3;
 
 //
 // Typography and spacing
@@ -36,31 +44,40 @@ $body-font: 'Iowan Old Style', 'Book Antiqua', 'Palatino Linotype', 'Palatino',
 $milky: 'Milky Love', 'MilkyLove', 'Gill Sans', 'Gill Sans MT',
   'Nimbus Sans L', Roboto, sans-serif;
 
-// Scale 1.333 rounded
-$size-mini: 0.6rem;
-$size-0: 0.75rem;
-$size-1: 1rem;
-$size-2: 1.3rem;
-$size-3: 1.8rem;
-$size-4: 2.4rem;
-$size-5: 3.2rem;
-$size-6: 4.2rem;
+$source-sans: 'Source Sans Pro', ui-sans-serif, system-ui, -apple-system, sans-serif;
+$line-length-long-form: 35rem;
+$line-length: 37rem;
+
+// Spacing
+$space-025: 0.25rem;
+$space-05: 0.5rem;
+$space-1: 1rem;
+$space-2: 2rem;
+$space-4: 4rem;
+$space-6: 6rem;
+$space-8: 8rem;
+
+// $font-size-multi: 0.3rem;
+$font-size-9: 4.7rem;
+$font-size-8: 4.1rem;
+$font-size-7: 3.5rem;
+$font-size-6: 2.9rem;
+$font-size-5: 2.3rem;
+$font-size-4: 1.7rem;
+$font-size-3: 1.4rem;
+$font-size-2: 1.1rem;
+$font-size-1: 0.85rem;
+$font-size--1: 0.75rem;
+$font-size--2: 0.7rem;
+$font-size--3: 0.6rem;
+$font-size--4: 0.55rem;
 
 $line-0: 1.25;
 $line-1: 1.5;
 
-//
-// Spacing
-//
-$space: 1rem;
 
-$space-quarter: 0.25 * $space;
-$space-half: 0.5 * $space;
 
-$space-2: 2 * $space;
-$space-3: 3 * $space;
-$space-4: 4 * $space;
-$space-5: 5 * $space;
-$space-6: 6 * $space;
-$space-8: 8 * $space;
+$opacity-primary: 0.87;
+$opacity-secondary: 0.6;
+$opacity-faded: 0.38;
 

@@ -1,5 +1,6 @@
 {
   "name": "magicmunchers",
+  "homepage": "https://www.magicmunchers.lol/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +12,7 @@
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "sass": "^1.49.0",
+    "semver": "^7.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

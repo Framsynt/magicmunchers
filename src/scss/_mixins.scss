@@ -1,6 +1,8 @@
 //
 // Mixins
 //
+@use "constants"  as *;
+
 // Ex:
 // @include transition;
 
@@ -14,52 +16,69 @@
 //
 //  Fonts
 //
-@mixin font-head {
+@mixin body1 {
+  font-size: $font-size-1;
+  line-height: 1.25rem;
   font-weight: 400;
+}
+@mixin body2 {
+  font-size: $font-size--1;
+  line-height: 1rem;
+  font-weight: 300;
+}
+@mixin button {
+  font-size: $font-size--2;
+  line-height: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+@mixin title-large {
   font-family: $milky;
+  font-size: $font-size-7;
+  line-height: 1;
+  font-weight: 700;
 }
-
-@mixin font-body {
+@mixin title1 {
+  font-size: $font-size-3;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+@mixin title2 {
+  font-size: $font-size-2;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+@mixin table {
+  font-size: $font-size--1;
+  line-height: 1rem;
   font-weight: 400;
-  font-family: $body-font;
+}
+@mixin caption {
+  font-size: $font-size--3;
+  line-height: 0.75rem;
+  font-weight: 400;
+}
+@mixin caption-mini {
+  font-size: $font-size--4;
+  line-height: 0.75rem;
+  font-weight: 400;
 }
 
-//  15/20px
-@mixin size-0 {
-  font-size: $size-0;
-  line-height: $space;
+@mixin text-shadow {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
-//  20/30px
-@mixin size-1 {
-  font-size: $size-1;
-  line-height: $space * 1.5;
+
+@mixin space-text-shadow {
+  text-shadow: -3px 3px 3px rgba(0,0,0,.25);
 }
-//  26/40px
-@mixin size-2 {
-  font-size: $size-2;
-  line-height: $space * 2;
+
+@mixin space-shadow {
+  box-shadow: -3px 3px 3px rgba(0,0,0,.25);
 }
-//  Below used for heddings
-//  Therefore smaller line-height
-//  36/40px
-@mixin size-3 {
-  font-size: $size-3;
-  line-height: $space * 2;
-}
-//  48/50px
-@mixin size-4 {
-  font-size: $size-4;
-  line-height: $space * 2.5;
-}
-//  64/70px
-@mixin size-5 {
-  font-size: $size-5;
-  line-height: $space * 3.5;
-}
-//  84/90px
-@mixin size-6 {
-  font-size: $size-6;
-  line-height: $space * 4.5;
+
+@mixin border-radius {
+  border-radius: 3px;
 }
 
 //
@@ -69,32 +88,32 @@
 //  .my-box {
 //    padding: 10px;
 //
-//    @include for-desktop-up {
+//    @include laptop-up {
 //      padding: 20px;
 //    }
 //  }
-//
-@mixin for-phone-only {
+
+@mixin phone-only {
   @media (max-width: 599px) {
     @content;
   }
 }
-@mixin for-tablet-portrait-up {
+@mixin tablet-up {
   @media (min-width: 600px) {
     @content;
   }
 }
-@mixin for-tablet-landscape-up {
-  @media (min-width: 900px) {
+@mixin laptop-up {
+  @media (min-width: 1000px) {
     @content;
   }
 }
-@mixin for-desktop-up {
+@mixin desktop-up {
   @media (min-width: 1200px) {
     @content;
   }
 }
-@mixin for-big-desktop-up {
+@mixin big-desktop-up {
   @media (min-width: 1800px) {
     @content;
   }

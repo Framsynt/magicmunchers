@@ -1,0 +1,52 @@
+//
+// Sections
+//
+@use "constants"  as *;
+@use "mixins"  as *;
+
+.section {
+  position: relative;
+  min-width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  @include laptop-up {
+  }
+}
+
+.content {
+  position: relative;
+  max-width: 100%;
+  width: $line-length;
+  padding: $space-4 $space-1 $space-4;
+  overflow: hidden;
+  @include laptop-up {
+    padding: $space-4 $space-1 $space-4;
+  }
+}
+
+.section--title {
+  color: $magic-green;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: $space-2;
+  @include laptop-up {
+    font-size: $font-size-9;
+  }
+  // color: $white-primary;
+}
+.logo_welcome {
+  font-size: $font-size-4;
+  @include laptop-up {
+    font-size: $font-size-5;
+  }
+}
+
+.subtitle {
+  @include title1;
+  text-align: center;
+  // color: $black-primary;
+}
