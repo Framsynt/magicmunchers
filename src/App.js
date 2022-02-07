@@ -1,23 +1,26 @@
 import "./App.scss";
+import munchersTop from "./images/munchers_top.png";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App dark-mode">
       <header className="section section--title">
-        <div className="content">
+        <div className="content content--tittle">
+          <div className="welcome">Welcome to</div>
           <h1 className="logo">
-            <span className="logo_welcome">Welcome to</span>
-            <br />
             Magic Munchers
           </h1>
-          <p className="subtitle">
-            We're a bunch of furry little monsters roaming the metaverse
-            devouring jpegs and harvesting $MAGIC.
-          </p>
+        </div>
+        <div class="munchers-top">
+          <img src={munchersTop} class="munchers-top__img" alt="Munchers" />
         </div>
       </header>
       <div className="section">
         <div className="content">
+          <p className="subtitle">
+            We're a bunch of furry little monsters roaming the metaverse
+            devouring jpegs and harvesting $MAGIC.
+          </p>
           <p>
             We’re looking to consume and grow Legions, Treasures, and $MAGIC
             within Bridgeworld, and other ETH blue-chip, yield-bearing assets as
